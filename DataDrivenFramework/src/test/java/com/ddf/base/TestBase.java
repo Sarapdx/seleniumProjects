@@ -7,6 +7,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,7 +17,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-import jdk.internal.org.jline.utils.Log;
+import com.ddf.utilities.ExcelReader;
+
+
 
 public class TestBase {
 	
@@ -29,6 +33,7 @@ public class TestBase {
 	 * initialize Mailing
 	 * ReportNG, ExtendtReports
 	 * Jenkins
+	 * wait
 	 */
 
 	
@@ -38,6 +43,7 @@ public class TestBase {
 	public static FileInputStream fis;
 	public static WebDriverWait wait;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
+	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
 	
 	
 	@BeforeSuite
@@ -98,7 +104,19 @@ public class TestBase {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
 			wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
 		}
+		
 	}
+	
+	
+	public boolean isElementPresent(By by) {
+		try {
+			driver.findElement(by);
+			return true;
+		}catch(NoSuchElementException e) {
+			return false;
+		}
+	}
+	
 	
 	@AfterSuite
 	public void tearDown()

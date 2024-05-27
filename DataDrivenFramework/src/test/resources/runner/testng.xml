@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Data Driven Framework">
-  <test thread-count="5" name="LoginTest">
+  <test thread-count="5" name="Bank Manager Login Test">
     <classes>
-      <class name="com.ddf.TestCases.LoginTest"/>
+      <class name="com.ddf.TestCases.BankManagerLoginTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Add Customer Test">
+    <classes>
+      <class name="com.ddf.TestCases.AddCustomerTest"/>
       
     </classes>
   </test> <!-- Test -->
