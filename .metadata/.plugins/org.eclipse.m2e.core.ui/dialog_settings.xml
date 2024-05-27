@@ -53,8 +53,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="ddfPOMProject"/>
 			<item value="DataDrivenFramework"/>
+			<item value="ddfPOMProject"/>
 			<item value="myProjectPOM"/>
 			<item value="ddfPOM"/>
 			<item value="ddfproject"/>
