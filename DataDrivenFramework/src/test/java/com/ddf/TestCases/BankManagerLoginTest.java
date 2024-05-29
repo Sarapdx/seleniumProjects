@@ -12,6 +12,9 @@ public class BankManagerLoginTest extends TestBase{
 	@Test
 	public void loginAsBankManager() throws InterruptedException
 	{
+		
+		System.setProperty("org.uncommons.reportng.escape-output","false");
+		
 		log.debug("Inside the test");
 		Assert.assertTrue(isElementPresent(By.cssSelector(objrepo.getProperty("bmlBtn_CSS"))),"Login is not successful");
 		
@@ -22,7 +25,7 @@ public class BankManagerLoginTest extends TestBase{
 		
 		log.debug("Login successfully executed");
 		Reporter.log("Login successfully executed");
-		Reporter.log("<a href=\"C:\\Users\\kfamily\\eclipse-workspace\\DataDrivenFramework\\src\\test\\resources\\excel\\download.png\">Screenshot</a>");
+		Reporter.log("<a target =\"_blank\" href=\"C:\\Users\\kfamily\\eclipse-workspace\\DataDrivenFramework\\src\\test\\resources\\excel\\download.png\">Screenshot</a>");
 	}
 }
 		

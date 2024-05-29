@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="3.788">
+           time="3.808">
   <properties />
   
   
-            <testcase name="loginAsBankManager" time="3.788" classname="com.ddf.TestCases.BankManagerLoginTest" />
+            <testcase name="loginAsBankManager" time="3.808" classname="com.ddf.TestCases.BankManagerLoginTest" />
       
 </testsuite>

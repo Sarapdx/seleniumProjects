@@ -5,33 +5,33 @@
       <![CDATA[Login successfully executed]]>
     </line>
     <line>
-      <![CDATA[<a href="C:\Users\kfamily\eclipse-workspace\DataDrivenFramework\src\test\resources\excel\download.png">Screenshot</a>]]>
+      <![CDATA[<a target ="_blank" href="C:\Users\kfamily\eclipse-workspace\DataDrivenFramework\src\test\resources\excel\download.png">Screenshot</a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-05-29T03:55:20Z" name="Data Driven Framework" finished-at="2024-05-29T03:55:28Z" duration-ms="8410">
+  <suite started-at="2024-05-29T05:18:04Z" name="Data Driven Framework" finished-at="2024-05-29T05:18:13Z" duration-ms="8680">
     <groups>
     </groups>
-    <test started-at="2024-05-29T03:55:20Z" name="Bank Manager Login Test" finished-at="2024-05-29T03:55:24Z" duration-ms="3813">
+    <test started-at="2024-05-29T05:18:04Z" name="Bank Manager Login Test" finished-at="2024-05-29T05:18:08Z" duration-ms="3864">
       <class name="com.ddf.TestCases.BankManagerLoginTest">
-        <test-method signature="loginAsBankManager()[pri:0, instance:com.ddf.TestCases.BankManagerLoginTest@2ad3a1bb]" started-at="2024-05-29T03:55:20Z" name="loginAsBankManager" finished-at="2024-05-29T03:55:23Z" duration-ms="3788" status="PASS">
+        <test-method signature="loginAsBankManager()[pri:0, instance:com.ddf.TestCases.BankManagerLoginTest@2ad3a1bb]" started-at="2024-05-29T05:18:04Z" name="loginAsBankManager" finished-at="2024-05-29T05:18:08Z" duration-ms="3808" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login successfully executed]]>
             </line>
             <line>
-              <![CDATA[<a href="C:\Users\kfamily\eclipse-workspace\DataDrivenFramework\src\test\resources\excel\download.png">Screenshot</a>]]>
+              <![CDATA[<a target ="_blank" href="C:\Users\kfamily\eclipse-workspace\DataDrivenFramework\src\test\resources\excel\download.png">Screenshot</a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.ddf.TestCases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Login Test -->
-    <test started-at="2024-05-29T03:55:24Z" name="Add Customer Test" finished-at="2024-05-29T03:55:28Z" duration-ms="4529">
+    <test started-at="2024-05-29T05:18:08Z" name="Add Customer Test" finished-at="2024-05-29T05:18:13Z" duration-ms="4720">
       <class name="com.ddf.TestCases.AddCustomerTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ddf.TestCases.AddCustomerTest@7249dadf]" started-at="2024-05-29T03:55:14Z" name="setUp" finished-at="2024-05-29T03:55:20Z" duration-ms="6059" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ddf.TestCases.AddCustomerTest@7249dadf]" started-at="2024-05-29T05:17:58Z" name="setUp" finished-at="2024-05-29T05:18:04Z" duration-ms="6460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ddf.TestCases.AddCustomerTest@7249dadf]" started-at="2024-05-29T03:55:24Z" name="addCustomer" data-provider="getData" finished-at="2024-05-29T03:55:28Z" duration-ms="4506" status="PASS">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.ddf.TestCases.AddCustomerTest@7249dadf]" started-at="2024-05-29T05:18:08Z" name="addCustomer" data-provider="getData" finished-at="2024-05-29T05:18:13Z" duration-ms="4690" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ddf.TestCases.AddCustomerTest@7249dadf]" started-at="2024-05-29T03:55:28Z" name="tearDown" finished-at="2024-05-29T03:55:30Z" duration-ms="1525" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ddf.TestCases.AddCustomerTest@7249dadf]" started-at="2024-05-29T05:18:13Z" name="tearDown" finished-at="2024-05-29T05:18:14Z" duration-ms="1423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
