@@ -22,7 +22,7 @@ public class AddCustomerTest extends TestBase{
 			  
 			 Alert alert =  wait.until(ExpectedConditions.alertIsPresent());
 			 alert.getText().contains(alertText);
-			 Thread.sleep(5000);
+			// Thread.sleep(5000);
 			 alert.accept();
 			
 			
