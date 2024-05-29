@@ -3,8 +3,8 @@
 <suite name="Data Driven Framework">
 
 	<listeners>
-		<listener class-name="org.uncommones.reportng.HTMLReporter"/>
-		<listener class-name="org.uncommones.reportng.JUnitXMLReporter"/>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
 	</listeners>
 		
   <test thread-count="5" name="Bank Manager Login Test">
