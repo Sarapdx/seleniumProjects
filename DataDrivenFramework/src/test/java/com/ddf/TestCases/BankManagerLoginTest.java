@@ -23,9 +23,11 @@ public class BankManagerLoginTest extends TestBase{
 		
 		//Assert.assertTrue(isElementPresent(By.cssSelector(objrepo.getProperty("addCustBtn_CSS"))),"Navigated to next page");
 		
-		log.debug("Login successfully executed");
-		Reporter.log("Login successfully executed");
-		Reporter.log("<a target =\"_blank\" href=\"C:\\Users\\kfamily\\eclipse-workspace\\DataDrivenFramework\\src\\test\\resources\\excel\\download.png\">Screenshot</a>");
+//		log.debug("Login successfully executed");
+//		Reporter.log("Login successfully executed");
+		
+		Assert.fail("Login not successful");
+
 	}
 }
 		

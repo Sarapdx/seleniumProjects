@@ -3,6 +3,7 @@ package com.ddf.TestCases;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -24,6 +25,8 @@ public class AddCustomerTest extends TestBase{
 			 alert.getText().contains(alertText);
 			// Thread.sleep(5000);
 			 alert.accept();
+			 
+			 Assert.fail("customer not added");
 			
 			
 		}
