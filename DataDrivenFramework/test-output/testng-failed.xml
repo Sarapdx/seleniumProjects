@@ -17,4 +17,15 @@
       </class> <!-- com.ddf.TestCases.BankManagerLoginTest -->
     </classes>
   </test> <!-- Bank Manager Login Test(failed) -->
+  <test thread-count="5" name="Add Customer Test(failed)">
+    <classes>
+      <class name="com.ddf.TestCases.AddCustomerTest">
+        <methods>
+          <include name="addCustomer"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ddf.TestCases.AddCustomerTest -->
+    </classes>
+  </test> <!-- Add Customer Test(failed) -->
 </suite> <!-- Failed suite [Data Driven Framework] -->

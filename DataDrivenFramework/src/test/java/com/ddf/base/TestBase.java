@@ -1,5 +1,7 @@
 package com.ddf.base;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -46,6 +48,7 @@ public class TestBase {
 	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
 	
 	
+	@BeforeMethod
 	@BeforeSuite
 	public void setUp()
 	{
@@ -89,9 +92,14 @@ public class TestBase {
 				
 			}else if (config.getProperty("browser").equals("chrome"))
 			{
-				System.setProperty("WebDriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromeDriver.exe");
-				driver = new ChromeDriver();
+				//System.setProperty("WebDriver.chrome.driver", System.getProperty(("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe"));
+				// System.setProperty("webDriver.chrome.driver", System.getProperty(("user.dir")+"\\src\\test\\resources\\executables\\chromeDriver.exe"));
+				
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+//				
+				 driver = new ChromeDriver();
 				log.debug("Chrome Launched");
+				
 			}else if (config.getProperty("browser").equals("ie"))
 			{
 				System.setProperty("WebDriver.ie.driver", "IEDriverServer.exe");
@@ -118,6 +126,7 @@ public class TestBase {
 	}
 	
 	
+	@AfterMethod
 	@AfterSuite
 	public void tearDown()
 	{
@@ -130,3 +139,4 @@ public class TestBase {
 	}
 
 }
+
