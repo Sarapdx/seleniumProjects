@@ -48,7 +48,7 @@ public class TestBase {
 	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
 	
 	
-	@BeforeMethod
+	
 	@BeforeSuite
 	public void setUp()
 	{
@@ -126,7 +126,7 @@ public class TestBase {
 	}
 	
 	
-	@AfterMethod
+
 	@AfterSuite
 	public void tearDown()
 	{

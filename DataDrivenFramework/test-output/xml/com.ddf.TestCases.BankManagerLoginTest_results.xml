@@ -1,79 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Bank Manager Login Test"
-           tests="3"
-           failures="1"
+           tests="1"
+           failures="0"
            errors="0"
-           skipped="2"
-           time="1.638">
+           skipped="0"
+           time="3.897">
   <properties />
-            <testcase name="setUp" time="1.638" classname="com.ddf.TestCases.BankManagerLoginTest">
-                <failure type="org.openqa.selenium.SessionNotCreatedException"
-                  message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 125.0.6422.142 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe 
-Host info: host: &apos;DESKTOP-AR99L16&apos;, ip: &apos;192.168.1.13&apos;
-Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]"
-              >
-<![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 125.0.6422.142 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe 
-Host info: host: 'DESKTOP-AR99L16', ip: '192.168.1.13'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}]}]
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-  org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-  org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-  org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
-  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-  org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
-  com.ddf.base.TestBase.setUp(TestBase.java:100)
-  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-  java.base/java.lang.reflect.Method.invoke(Method.java:580)
-  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-  org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-  org.testng.TestRunner.privateRun(TestRunner.java:648)
-  org.testng.TestRunner.run(TestRunner.java:505)
-  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-  org.testng.SuiteRunner.run(SuiteRunner.java:364)
-  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-  org.testng.TestNG.runSuites(TestNG.java:1049)
-  org.testng.TestNG.run(TestNG.java:1017)
-  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-      </failure>
-
-          </testcase>
-  
-            <testcase name="tearDown" time="0.0" classname="com.ddf.TestCases.BankManagerLoginTest">
-          <skipped />
-    </testcase>
-            <testcase name="loginAsBankManager" time="0.0" classname="com.ddf.TestCases.BankManagerLoginTest">
-          <skipped />
-    </testcase>
   
   
+            <testcase name="loginAsBankManager" time="3.897" classname="com.ddf.TestCases.BankManagerLoginTest" />
+      
 </testsuite>
