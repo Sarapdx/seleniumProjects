@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="4.641">
+           time="4.302">
   <properties />
   
   
-            <testcase name="addCustomer" time="4.641" classname="com.ddf.TestCases.AddCustomerTest" />
+            <testcase name="addCustomer" time="4.302" classname="com.ddf.TestCases.AddCustomerTest" />
       
 </testsuite>
