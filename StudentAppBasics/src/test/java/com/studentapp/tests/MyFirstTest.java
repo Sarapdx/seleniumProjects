@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 // import static io.restassured.response.Response.*;
 
-public class MyFirstTest {
+public class MyFirstTest extends TestBase{
 	
 	private void styles() {
 		
@@ -36,7 +36,7 @@ public class MyFirstTest {
 //	@Test
 //	public void getAllStudents() {
 //		RequestSpecification requestSpec =   RestAssured.given();
-//		Response res =   requestSpec.get("http://localhost:1235/student/list");
+//		Response res =   requestSpec.get("/list");
 //		res.prettyPrint();
 //		ValidatableResponse val = res.then();
 //		val.statusCode(200);
@@ -68,7 +68,7 @@ public class MyFirstTest {
 		
 	}
 	
-	@Disabled
+	// @Disabled
 	@DisplayName("Getting single CS students from the database")
 	@Test
 	void getSingleStudentDetail() {
@@ -84,7 +84,7 @@ public class MyFirstTest {
 			//	.queryParam("programme", "Computer Science","limit", 1)
 				.queryParams(params)
 				.when()
-				.get("http://localhost:1235/student/list");
+				.get("/list");
 				
 		
 		 res.prettyPrint();
@@ -98,7 +98,7 @@ public class MyFirstTest {
 		Response res = (Response) RestAssured.given()
 								.pathParam("id",2)
 								.when()	
-								.get("http://localhost:1235/student/{id}");
+								.get("/{id}");
 		res.prettyPrint();
 		
 	}

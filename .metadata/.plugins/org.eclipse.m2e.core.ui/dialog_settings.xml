@@ -47,12 +47,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.studentapp.example"/>
 			<item value="DataDrivenFramework"/>
 			<item value="com.modelw2a"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="StudentAppBasics"/>
 			<item value="DataDrivenFramework"/>
 			<item value="ddfPOMProject"/>
 			<item value="myProjectPOM"/>
